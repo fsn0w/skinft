@@ -9,19 +9,19 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class( 'bg-background antialiased text-[15px] leading-5 bg-bgpage text-text font-thin lg:text-base lg:leading-8' ); ?>>
+<body <?php body_class( 'bg-background antialiased font-sans font-thin text-base leading-8' ); ?>>
 
-<?php do_action( 'tailpress_site_before' ); ?>
+<?php do_action( 'skinft_site_before' ); ?>
 
 <div id="page" class="flex flex-col overflow-x-hidden">
 
-	<?php do_action( 'tailpress_header' ); ?>
-	<header class="absolute w-full z-50 ">
-		<div class="mx-auto px-4 lg:container">
-			<div class="lg:flex lg:justify-between lg:items-center py-3 lg:pt-6 lg:pb-10">
+	<?php do_action( 'skinft_header' ); ?>
+	<header class="absolute w-full z-50 bg-header h-40">
+		<div class="mx-auto bg-menu mt-6 py-1">
+			<div class="mx-auto flex justify-between items-center container">
 				<div class="flex justify-between items-center">
 					<div>
-						<a href="/" title="SkinFT"><img src="<?=get_stylesheet_directory_uri()?>/assets/img/skinft.svg" alt="SkinFT"></a>
+						<a href="/" title="SkinFT"><img src="<?=get_stylesheet_directory_uri()?>/assets/img/skinft.svg" alt="SkinFT" height="41" width="179"></a>
 					</div>
 
 					<div class="lg:hidden">
@@ -45,8 +45,8 @@
 					wp_nav_menu(
 						array(
 							'container_id'    => 'primary-menu',
-							'container_class' => 'hidden block bg-white shadow-inner rounded-2xl mt-4 p-4 font-comet lg:shadow-none lg:mt-0 lg:p-0 lg:bg-transparent xl:bg-transparent lg:block',
-							'menu_class'      => 'items-center lg:mt-6 lg:flex',
+							'container_class' => 'hidden block shadow-inner rounded-2xl font-minecraft mt-0 p-0 lg:shadow-none lg:block',
+							'menu_class'      => 'items-center lg:flex text-white text-2xl',
 							'theme_location'  => 'primary',
 							'li_class'        => 'main-menu',
 							'fallback_cb'     => false,

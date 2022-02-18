@@ -22,6 +22,10 @@ module.exports = {
         extend: {
             colors: tailpress.colorMapper(tailpress.theme('settings.color.palette', theme))
         },
+        fontFamily: {
+            sans: ["Gotham", "sans-serif"],
+            minecraft: ["Minecraft", "sans-serif"] 
+        },
         screens: {
             'sm': '640px',
             'md': '768px',

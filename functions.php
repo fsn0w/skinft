@@ -3,7 +3,7 @@
 /**
  * Theme setup.
  */
-function skinft_setup() {
+function tailpress_setup() {
 	add_theme_support( 'title-tag' );
 
 	register_nav_menus(
@@ -33,19 +33,33 @@ function skinft_setup() {
 	add_editor_style( 'css/editor-style.css' );
 }
 
-add_action( 'after_setup_theme', 'skinft_setup' );
+add_action( 'after_setup_theme', 'tailpress_setup' );
+
+/**
+ * Add jQuery
+ */
+
+add_action( 'init', 'true_jquery_register' );
+ 
+function true_jquery_register() {
+	if ( !is_admin() ) {
+		wp_deregister_script( 'jquery' );
+		wp_register_script( 'jquery', ( 'http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js' ), false, null, true );
+		wp_enqueue_script( 'jquery' );
+	}
+}
 
 /**
  * Enqueue theme assets.
  */
-function skinft_enqueue_scripts() {
+function tailpress_enqueue_scripts() {
 	$theme = wp_get_theme();
 
-	wp_enqueue_style( 'tailpress', skinft_asset( 'css/app.css' ), array(), $theme->get( 'Version' ) );
-	wp_enqueue_script( 'tailpress', skinft_asset( 'js/app.js' ), array(), $theme->get( 'Version' ) );
+	wp_enqueue_style( 'tailpress', tailpress_asset( 'css/app.css' ), array(),'0.1' );
+	wp_enqueue_script( 'tailpress', tailpress_asset( 'js/app.js' ), array(), $theme->get( 'Version' ) );
 }
 
-add_action( 'wp_enqueue_scripts', 'skinft_enqueue_scripts' );
+add_action( 'wp_enqueue_scripts', 'tailpress_enqueue_scripts' );
 
 /**
  * Get asset path.
@@ -54,7 +68,7 @@ add_action( 'wp_enqueue_scripts', 'skinft_enqueue_scripts' );
  *
  * @return string
  */
-function skinft_asset( $path ) {
+function tailpress_asset( $path ) {
 	if ( wp_get_environment_type() === 'production' ) {
 		return get_stylesheet_directory_uri() . '/' . $path;
 	}
@@ -71,7 +85,7 @@ function skinft_asset( $path ) {
  *
  * @return array
  */
-function skinft_nav_menu_add_li_class( $classes, $item, $args, $depth ) {
+function tailpress_nav_menu_add_li_class( $classes, $item, $args, $depth ) {
 	if ( isset( $args->li_class ) ) {
 		$classes[] = $args->li_class;
 	}
@@ -83,7 +97,7 @@ function skinft_nav_menu_add_li_class( $classes, $item, $args, $depth ) {
 	return $classes;
 }
 
-add_filter( 'nav_menu_css_class', 'skinft_nav_menu_add_li_class', 10, 4 );
+add_filter( 'nav_menu_css_class', 'tailpress_nav_menu_add_li_class', 10, 4 );
 
 /**
  * Adds option 'submenu_class' to 'wp_nav_menu'.
@@ -94,7 +108,7 @@ add_filter( 'nav_menu_css_class', 'skinft_nav_menu_add_li_class', 10, 4 );
  *
  * @return array
  */
-function skinft_nav_menu_add_submenu_class( $classes, $args, $depth ) {
+function tailpress_nav_menu_add_submenu_class( $classes, $args, $depth ) {
 	if ( isset( $args->submenu_class ) ) {
 		$classes[] = $args->submenu_class;
 	}
@@ -106,4 +120,42 @@ function skinft_nav_menu_add_submenu_class( $classes, $args, $depth ) {
 	return $classes;
 }
 
-add_filter( 'nav_menu_submenu_css_class', 'skinft_nav_menu_add_submenu_class', 10, 3 );
+add_filter( 'nav_menu_submenu_css_class', 'tailpress_nav_menu_add_submenu_class', 10, 3 );
+
+// Allow SVG
+add_filter( 'wp_check_filetype_and_ext', function($data, $file, $filename, $mimes) {
+
+	global $wp_version;
+	if ( $wp_version !== '4.7.1' ) {
+	   return $data;
+	}
+  
+	$filetype = wp_check_filetype( $filename, $mimes );
+  
+	return [
+		'ext'             => $filetype['ext'],
+		'type'            => $filetype['type'],
+		'proper_filename' => $data['proper_filename']
+	];
+  
+  }, 10, 4 );
+  
+  function cc_mime_types( $mimes ){
+	$mimes['svg'] = 'image/svg+xml';
+	return $mimes;
+  }
+  add_filter( 'upload_mimes', 'cc_mime_types' );
+  
+  function fix_svg() {
+	echo '<style type="text/css">
+		  .attachment-266x266, .thumbnail img {
+			   width: 100% !important;
+			   height: auto !important;
+		  }
+		  </style>';
+  }
+  add_action( 'admin_head', 'fix_svg' );
+
+  /* remove '...' (3 dots) filter */
+
+  remove_filter( 'the_content', 'wptexturize' );

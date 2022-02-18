@@ -10,7 +10,7 @@
 
 @font-face{
     font-family:"Minecraft";
-    src:url("../css/fonts/MINECRAFTTEN-VGORE.TTF") format("ttf");
+    src:url("../css/fonts/Minecraft.ttf"), url('../css/fonts/Minecraft.otf');
     font-weight: normal;  
 }
 

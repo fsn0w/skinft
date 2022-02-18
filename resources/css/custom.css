@@ -35,3 +35,22 @@
         }
     }
 }
+
+.bg-header {
+    background-image: url(../assets/img/green-blocks.png);
+    @apply bg-repeat-x bg-contain;
+}
+
+.bg-menu {
+    background-color: rgba(19,16,30,.5);
+}
+
+.bg-title {
+    background: radial-gradient(#7a4c34, #5e2f13);
+}
+
+.bg-footer {
+    background-color: #532d19;
+    background-image: url(../assets/img/green-blocks-footer.png);
+    @apply bg-repeat-x bg-auto bg-bottom;
+}
