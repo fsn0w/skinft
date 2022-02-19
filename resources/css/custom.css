@@ -72,22 +72,18 @@
     /* Icons */
 
     .icon-eth {
-        background-image: url(../assets/img/icons/icon-eth.svg);
+        background-image: url(../assets/img/icons/icon-eth-white.svg);
     }
 
     .icon-tw {
-        background-image: url(../assets/img/icons/icon-twitter.svg); 
-    }
-
-    .icon-tg {
-        background-image: url(../assets/img/icons/icon-telegram.svg);
+        background-image: url(../assets/img/icons/icon-twitter-white.svg); 
     }
 
     .icon-ds {
-        background-image: url(../assets/img/icons/icon-discord.svg);
+        background-image: url(../assets/img/icons/icon-discord-white.svg);
     }
 
-    .icon-eth, .icon-tw, .icon-tg, .icon-ds {
+    .icon-eth, .icon-tw, .icon-ds {
         @apply inline-block bg-no-repeat bg-contain;
 
         & i {
