@@ -139,6 +139,22 @@
   width: 2.5rem
 }
 
+.w-1\/4 {
+  width: 25%
+}
+
+.w-1\/6 {
+  width: 16.666667%
+}
+
+.w-3\/5 {
+  width: 60%
+}
+
+.w-2\/5 {
+  width: 40%
+}
+
 .max-w-sm {
   max-width: 24rem
 }
@@ -197,17 +213,22 @@
 
 .border-primary {
   --tw-border-opacity: 1;
-  border-color: rgb(14 165 233 / var(--tw-border-opacity))
+  border-color: rgb(125 204 71 / var(--tw-border-opacity))
 }
 
 .bg-primary {
   --tw-bg-opacity: 1;
-  background-color: rgb(14 165 233 / var(--tw-bg-opacity))
+  background-color: rgb(125 204 71 / var(--tw-bg-opacity))
 }
 
 .bg-gray-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(229 231 235 / var(--tw-bg-opacity))
+}
+
+.bg-secondary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(114 67 43 / var(--tw-bg-opacity))
 }
 
 .bg-auto {
@@ -216,6 +237,10 @@
 
 .bg-repeat-x {
   background-repeat: repeat-x
+}
+
+.p-3 {
+  padding: 0.75rem
 }
 
 .px-4 {
@@ -246,8 +271,16 @@
   padding-bottom: 14rem
 }
 
+.pb-5 {
+  padding-bottom: 1.25rem
+}
+
 .pt-52 {
   padding-top: 13rem
+}
+
+.pb-10 {
+  padding-bottom: 2.5rem
 }
 
 .text-center {
@@ -287,6 +320,11 @@
   line-height: 1.75rem
 }
 
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem
+}
+
 .font-light {
   font-weight: 300
 }
@@ -301,6 +339,10 @@
 
 .font-extrabold {
   font-weight: 800
+}
+
+.font-normal {
+  font-weight: 400
 }
 
 .leading-8 {
@@ -329,6 +371,11 @@
 .text-gray-700 {
   --tw-text-opacity: 1;
   color: rgb(55 65 81 / var(--tw-text-opacity))
+}
+
+.text-light {
+  --tw-text-opacity: 1;
+  color: rgb(219 199 180 / var(--tw-text-opacity))
 }
 
 .text-blue-500 {

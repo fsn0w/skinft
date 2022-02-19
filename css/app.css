@@ -651,6 +651,22 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 2.5rem;
 }
 
+.w-1\/4 {
+  width: 25%;
+}
+
+.w-1\/6 {
+  width: 16.666667%;
+}
+
+.w-3\/5 {
+  width: 60%;
+}
+
+.w-2\/5 {
+  width: 40%;
+}
+
 .max-w-sm {
   max-width: 24rem;
 }
@@ -709,17 +725,22 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .border-primary {
   --tw-border-opacity: 1;
-  border-color: rgb(14 165 233 / var(--tw-border-opacity));
+  border-color: rgb(125 204 71 / var(--tw-border-opacity));
 }
 
 .bg-primary {
   --tw-bg-opacity: 1;
-  background-color: rgb(14 165 233 / var(--tw-bg-opacity));
+  background-color: rgb(125 204 71 / var(--tw-bg-opacity));
 }
 
 .bg-gray-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
+
+.bg-secondary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(114 67 43 / var(--tw-bg-opacity));
 }
 
 .bg-auto {
@@ -728,6 +749,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .bg-repeat-x {
   background-repeat: repeat-x;
+}
+
+.p-3 {
+  padding: 0.75rem;
 }
 
 .px-4 {
@@ -758,8 +783,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 14rem;
 }
 
+.pb-5 {
+  padding-bottom: 1.25rem;
+}
+
 .pt-52 {
   padding-top: 13rem;
+}
+
+.pb-10 {
+  padding-bottom: 2.5rem;
 }
 
 .text-center {
@@ -799,6 +832,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1.75rem;
 }
 
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .font-light {
   font-weight: 300;
 }
@@ -813,6 +851,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .font-extrabold {
   font-weight: 800;
+}
+
+.font-normal {
+  font-weight: 400;
 }
 
 .leading-8 {
@@ -841,6 +883,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-gray-700 {
   --tw-text-opacity: 1;
   color: rgb(55 65 81 / var(--tw-text-opacity));
+}
+
+.text-light {
+  --tw-text-opacity: 1;
+  color: rgb(219 199 180 / var(--tw-text-opacity));
 }
 
 .text-blue-500 {
@@ -942,53 +989,57 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: #4b5563;
 }
 
-.entry-content h1, .block-editor-block-list__layout h1 {
-    font-size: 1.5rem;
-    line-height: 2rem;
+.site-content h1 {
+    font-family: Minecraft, sans-serif;
   }
 
-.entry-content h2, .block-editor-block-list__layout h2 {
+.site-content h1 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+.site-content h2 {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
 
-.entry-content h3, .block-editor-block-list__layout h3 {
+.site-content h3 {
     font-size: 1.125rem;
     line-height: 1.75rem;
   }
 
-.entry-content p a, .entry-content ul a, .entry-content ol a, .block-editor-block-list__layout p a, .block-editor-block-list__layout ul a, .block-editor-block-list__layout ol a {
+.site-content p a, .site-content ul a, .site-content ol a {
       --tw-text-opacity: 1;
       color: rgb(59 130 246 / var(--tw-text-opacity));
     }
 
-.entry-content p a, .entry-content ul a, .entry-content ol a, .block-editor-block-list__layout p a, .block-editor-block-list__layout ul a, .block-editor-block-list__layout ol a {
+.site-content p a, .site-content ul a, .site-content ol a {
       -webkit-text-decoration-line: underline;
               text-decoration-line: underline;
     }
 
-.entry-content p a:hover, .entry-content ul a:hover, .entry-content ol a:hover, .block-editor-block-list__layout p a:hover, .block-editor-block-list__layout ul a:hover, .block-editor-block-list__layout ol a:hover {
+.site-content p a:hover, .site-content ul a:hover, .site-content ol a:hover {
         -webkit-text-decoration-line: none;
                 text-decoration-line: none;
       }
 
-.entry-content p, .entry-content ul, .entry-content ol, .block-editor-block-list__layout p, .block-editor-block-list__layout ul, .block-editor-block-list__layout ol {
+.site-content p, .site-content ul, .site-content ol {
     margin-bottom: 2rem;
   }
 
-.entry-content ul:not(.block-editor-block-variation-picker__variations) li, .block-editor-block-list__layout ul:not(.block-editor-block-variation-picker__variations) li {
+.site-content ul:not(.block-editor-block-variation-picker__variations) li {
       list-style-position: inside;
     }
 
-.entry-content ul:not(.block-editor-block-variation-picker__variations) li, .block-editor-block-list__layout ul:not(.block-editor-block-variation-picker__variations) li {
+.site-content ul:not(.block-editor-block-variation-picker__variations) li {
       list-style-type: disc;
     }
 
-.entry-content ol li, .block-editor-block-list__layout ol li {
+.site-content ol li {
       list-style-position: inside;
     }
 
-.entry-content ol li, .block-editor-block-list__layout ol li {
+.site-content ol li {
       list-style-type: decimal;
     }
 
