@@ -607,8 +607,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 3rem;
 }
 
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
 .block {
   display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.inline {
+  display: inline;
 }
 
 .flex {
@@ -629,6 +645,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-40 {
   height: 10rem;
+}
+
+.h-6 {
+  height: 1.5rem;
 }
 
 .min-h-screen {
@@ -665,6 +685,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-2\/5 {
   width: 40%;
+}
+
+.w-2\/3 {
+  width: 66.666667%;
+}
+
+.w-3\/4 {
+  width: 75%;
+}
+
+.w-6 {
+  width: 1.5rem;
 }
 
 .max-w-sm {
@@ -745,6 +777,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .bg-auto {
   background-size: auto;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
 }
 
 .bg-repeat-x {
@@ -837,6 +873,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 2.5rem;
 }
 
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .font-light {
   font-weight: 300;
 }
@@ -898,6 +939,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .antialiased {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.opacity-70 {
+  opacity: 0.7;
 }
 
 .shadow-inner {
@@ -990,6 +1035,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .site-content h1 {
+    margin-bottom: 2.5rem;
+  }
+
+.site-content h1 {
     font-family: Minecraft, sans-serif;
   }
 
@@ -1043,6 +1092,10 @@ Ensure the default browser behavior of the `hidden` attribute.
       list-style-type: decimal;
     }
 
+.site-content .minecraft {
+    font-family: Minecraft, sans-serif;
+  }
+
 /* BACKGROUNDs */
 
 .bg-header {
@@ -1072,6 +1125,34 @@ Ensure the default browser behavior of the `hidden` attribute.
 .main-menu a>span {
     font-size: 1.5rem !important;
     line-height: 2rem !important;
+  }
+
+/* Icons */
+
+.icon-eth {
+  background-image: url(../assets/img/icons/icon-eth.svg);
+}
+
+.icon-tw {
+  background-image: url(../assets/img/icons/icon-twitter.svg);
+}
+
+.icon-tg {
+  background-image: url(../assets/img/icons/icon-telegram.svg);
+}
+
+.icon-ds {
+  background-image: url(../assets/img/icons/icon-discord.svg);
+}
+
+.icon-eth, .icon-tw, .icon-tg, .icon-ds {
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.icon-eth i, .icon-tw i, .icon-tg i, .icon-ds i {
+    display: none;
   }
 
 .hover\:brightness-100:hover {

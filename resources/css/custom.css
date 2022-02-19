@@ -1,6 +1,6 @@
 .site-content {
     h1 {
-        @apply text-4xl font-minecraft;
+        @apply text-4xl font-minecraft mb-10;
     }
 
     h2 {
@@ -34,6 +34,10 @@
             @apply list-decimal list-inside;
         }
     }
+
+    .minecraft {
+        @apply font-minecraft;
+    }
 }
 
 /* BACKGROUNDs */
@@ -64,3 +68,29 @@
         @apply text-2xl !important;
     }
 }
+
+    /* Icons */
+
+    .icon-eth {
+        background-image: url(../assets/img/icons/icon-eth.svg);
+    }
+
+    .icon-tw {
+        background-image: url(../assets/img/icons/icon-twitter.svg); 
+    }
+
+    .icon-tg {
+        background-image: url(../assets/img/icons/icon-telegram.svg);
+    }
+
+    .icon-ds {
+        background-image: url(../assets/img/icons/icon-discord.svg);
+    }
+
+    .icon-eth, .icon-tw, .icon-tg, .icon-ds {
+        @apply inline-block bg-no-repeat bg-contain;
+
+        & i {
+            @apply hidden;
+        }
+    }
