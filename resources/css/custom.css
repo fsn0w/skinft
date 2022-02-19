@@ -1,6 +1,6 @@
 .site-content {
     h1 {
-        @apply text-4xl font-minecraft mb-10;
+        @apply text-xl lg:text-4xl font-minecraft mb-10;
     }
 
     h2 {
