@@ -45,10 +45,10 @@
 					wp_nav_menu(
 						array(
 							'container_id'    => 'primary-menu',
-							'container_class' => 'hidden block shadow-inner rounded-2xl font-minecraft mt-0 p-0 lg:shadow-none lg:block',
-							'menu_class'      => 'items-center lg:flex text-white text-2xl',
+							'container_class' => 'hidden block shadow-inner font-minecraft lg:block',
+							'menu_class'      => 'items-center lg:flex text-white text-xl',
 							'theme_location'  => 'primary',
-							'li_class'        => 'main-menu',
+							'li_class'        => 'main-menu px-4',
 							'fallback_cb'     => false,
 						)
 					);
