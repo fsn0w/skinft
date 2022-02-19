@@ -20,10 +20,17 @@ get_header();
                 <p>The first ever NFT you can use in-game from the get go.</p>
                 <p>SkinFT is an NFT skin collection designed for <span class="minecraft">MineCraft</span></p>
             </div>
-            <a href="" class="mt-10 inline-block text-4xl text-white bg-primary p-3 rounded font-normal">Mint a SkinFT</a>
+            <div class="flex justify-between items-center mt-5">
+                <div><a href="" class="inline-block text-4xl text-white bg-primary p-3 rounded font-normal">Mint a SkinFT</a></div>
+                <div class="text-center text-xl">
+                    <img src="<?=get_stylesheet_directory_uri()?>/assets/img/skin-sample.png" width="150" height="150" class="mx-auto mb-4" />
+                    <p>In-game image file</p>
+                </div>
+            </div>
         </div>
-        <div class="w-2/5">
-            img
+        <div class="w-2/5 text-center">
+            <img src="<?=get_stylesheet_directory_uri()?>/assets/img/3-model-sample.png" class="mb-4" />
+            <p>3d model of the SkinFT</p>
         </div>
     </div>
 </div>
