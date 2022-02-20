@@ -9,7 +9,7 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class( 'bg-secondary antialiased font-sans font-thin text-2xl leading-8' ); ?>>
+<body <?php body_class( 'bg-secondary antialiased font-sans font-thin text-base lg:text-2xl lg:leading-8' ); ?>>
 
 <?php do_action( 'skinft_site_before' ); ?>
 

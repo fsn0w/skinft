@@ -179,6 +179,14 @@
   height: auto
 }
 
+.h-\[79px\] {
+  height: 79px
+}
+
+.h-\[129px\] {
+  height: 129px
+}
+
 .min-h-screen {
   min-height: 100vh
 }
@@ -237,6 +245,16 @@
 
 .w-11\/12 {
   width: 91.666667%
+}
+
+.w-auto {
+  width: auto
+}
+
+.w-fit {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content
 }
 
 .max-w-sm {
@@ -442,6 +460,10 @@
 
 .text-right {
   text-align: right
+}
+
+.align-middle {
+  vertical-align: middle
 }
 
 .font-sans {
@@ -768,8 +790,40 @@ body {
     width: 3.5rem
   }
 
+  .lg\:w-11\/12 {
+    width: 91.666667%
+  }
+
+  .lg\:w-2\/5 {
+    width: 40%
+  }
+
+  .lg\:flex-col {
+    flex-direction: column
+  }
+
+  .lg\:justify-between {
+    justify-content: space-between
+  }
+
+  .lg\:gap-4 {
+    gap: 1rem
+  }
+
   .lg\:pt-52 {
     padding-top: 13rem
+  }
+
+  .lg\:pb-10 {
+    padding-bottom: 2.5rem
+  }
+
+  .lg\:pt-24 {
+    padding-top: 6rem
+  }
+
+  .lg\:pb-16 {
+    padding-bottom: 4rem
   }
 
   .lg\:text-base {
@@ -799,6 +853,10 @@ body {
 
   .lg\:text-2xl {
     font-size: 1.5rem;
+    line-height: 2rem
+  }
+
+  .lg\:leading-8 {
     line-height: 2rem
   }
 }
