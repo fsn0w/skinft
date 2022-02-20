@@ -10,7 +10,7 @@
 	<?php do_action( 'skinft_footer' ); ?>
 
 	<div class="max-w-3xl mx-auto">
-		<div class="flex flex-col lg:flex-row">
+		<div class="w-full flex flex-col lg:flex-row">
 			<div class="w-1/2 text-sm">
 				<img src="<?=get_stylesheet_directory_uri()?>/assets/img/skinft.svg" class="mb-6" width="366" height="83" alt="SkinFT"/>
 				@2022-All rights reserved to SkinFT
