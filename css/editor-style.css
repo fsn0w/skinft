@@ -247,6 +247,10 @@
   max-width: 56rem
 }
 
+.max-w-3xl {
+  max-width: 48rem
+}
+
 .cursor-pointer {
   cursor: pointer
 }
@@ -273,6 +277,10 @@
 
 .items-center {
   align-items: center
+}
+
+.justify-end {
+  justify-content: flex-end
 }
 
 .justify-center {
@@ -542,6 +550,11 @@
   color: rgb(59 130 246 / var(--tw-text-opacity))
 }
 
+.underline {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline
+}
+
 .antialiased {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale
@@ -735,6 +748,10 @@ body {
     height: 5rem
   }
 
+  .lg\:h-14 {
+    height: 3.5rem
+  }
+
   .lg\:w-20 {
     width: 5rem
   }
@@ -745,6 +762,10 @@ body {
 
   .lg\:w-auto {
     width: auto
+  }
+
+  .lg\:w-14 {
+    width: 3.5rem
   }
 
   .lg\:pt-52 {
@@ -774,5 +795,10 @@ body {
   .lg\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem
+  }
+
+  .lg\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem
   }
 }

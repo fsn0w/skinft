@@ -86,7 +86,15 @@
         background-image: url(../assets/img/icons/icon-discord-white.svg);
     }
 
-    .icon-eth, .icon-tw, .icon-ds {
+    .icon-tw-br {
+        background-image: url(../assets/img/icons/icon-twitter-brown.svg); 
+    }
+
+    .icon-ds-br {
+        background-image: url(../assets/img/icons/icon-discord-brown.svg);
+    }
+
+    .icon-eth, .icon-tw, .icon-ds, .icon-tw-br, .icon-ds-br {
         @apply inline-block bg-no-repeat bg-contain;
 
         & i {
