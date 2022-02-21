@@ -16,9 +16,9 @@
 <div id="page" class="flex flex-col overflow-x-hidden">
 
 	<?php do_action( 'skinft_header' ); ?>
-	<header class="absolute w-full z-50 bg-header h-40">
-		<div class="mx-auto bg-menu mt-6 py-1">
-			<div class="mx-auto flex justify-between items-center container">
+	<header class="absolute w-full z-50 bg-header lg:h-40">
+		<div class="mx-auto lg:bg-menuline mt-6 py-1">
+			<div class="mx-auto lg:flex lg:justify-between lg:items-center container">
 				<div class="w-full flex justify-between items-center mt-5 lg:mt-0">
 					<div>
 						<a href="/" title="SkinFT"><img src="<?=get_stylesheet_directory_uri()?>/assets/img/skinft.svg" alt="SkinFT" height="41" width="179"></a>
@@ -41,8 +41,8 @@
 					wp_nav_menu(
 						array(
 							'container_id'    => 'primary-menu',
-							'container_class' => 'hidden block shadow-inner font-minecraft lg:block',
-							'menu_class'      => 'items-center lg:flex text-white text-xl',
+							'container_class' => 'hidden block bg-white shadow-inner rounded-2xl mt-4 p-4 font-minecraft lg:shadow-none lg:mt-0 lg:p-0 lg:bg-transparent xl:bg-transparent lg:block',
+							'menu_class'      => 'items-center text-secondary lg:flex lg:text-white text-xl',
 							'theme_location'  => 'primary',
 							'li_class'        => 'main-menu px-4 whitespace-nowrap',
 							'fallback_cb'     => false,

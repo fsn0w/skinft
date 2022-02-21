@@ -25,6 +25,11 @@
           "name": "Light",
           "slug": "light",
           "color": "#DBC7B4"
+        },
+        {
+          "name": "MenuLine",
+          "slug": "menuline",
+          "color": "#13101e80"
         }
       ]
     },
