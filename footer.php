@@ -34,5 +34,49 @@
 
 <?php wp_footer(); ?>
 
+<script>
+/*
+ 
+	+/- buttons
+
+*/
+
+jQuery(document).ready(function($) {
+
+	const mintMin = 1;
+    const mintMax = 7;
+	const tokenPrice = 0.019;
+
+    $('.minus').click(function () {
+        var $input = $(this).parent().find('input');
+        var count = parseInt($input.val()) - 1;
+        count = count < mintMin ? mintMin : count;
+        $input.val(count);
+        $input.change();
+
+		$('.mint-price').val((parseInt($input.val())*tokenPrice).toFixed(2));
+		$('.mint-price').change();
+
+        return false;
+    });
+    
+    $('.plus').click(function () {
+        var $input = $(this).parent().find('input');
+
+        if (parseInt($input.val())<mintMax) {
+            $input.val(parseInt($input.val()) + 1);
+            $input.change();
+
+			$('.mint-price').val((parseInt($input.val())*tokenPrice).toFixed(2));
+			$('.mint-price').change();
+        }
+
+        return false;
+    });
+
+});
+
+</script>
+
 </body>
 </html>
