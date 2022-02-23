@@ -4,9 +4,9 @@
     }
 
     h2 {
-        @apply text-3xl font-minecraft;
+        @apply text-lg lg:text-3xl font-minecraft;
         span {
-            @apply text-4xl;
+            @apply text-2xl lg:text-4xl;
         }
     }
 

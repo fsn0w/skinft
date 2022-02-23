@@ -40,6 +40,42 @@
   position: relative
 }
 
+.-left-60 {
+  left: -15rem
+}
+
+.top-0 {
+  top: 0px
+}
+
+.-left-10 {
+  left: -2.5rem
+}
+
+.-right-60 {
+  right: -15rem
+}
+
+.-bottom-10 {
+  bottom: -2.5rem
+}
+
+.-bottom-16 {
+  bottom: -4rem
+}
+
+.-bottom-32 {
+  bottom: -8rem
+}
+
+.-left-4 {
+  left: -1rem
+}
+
+.-bottom-24 {
+  bottom: -6rem
+}
+
 .z-50 {
   z-index: 50
 }
@@ -133,6 +169,26 @@
   margin-top: 4rem
 }
 
+.mb-10 {
+  margin-bottom: 2.5rem
+}
+
+.mr-4 {
+  margin-right: 1rem
+}
+
+.ml-4 {
+  margin-left: 1rem
+}
+
+.mr-6 {
+  margin-right: 1.5rem
+}
+
+.ml-6 {
+  margin-left: 1.5rem
+}
+
 .block {
   display: block
 }
@@ -179,6 +235,14 @@
 
 .h-8 {
   height: 2rem
+}
+
+.h-12 {
+  height: 3rem
+}
+
+.h-32 {
+  height: 8rem
 }
 
 .min-h-screen {
@@ -231,6 +295,14 @@
 
 .w-4 {
   width: 1rem
+}
+
+.w-24 {
+  width: 6rem
+}
+
+.w-20 {
+  width: 5rem
 }
 
 .max-w-sm {
@@ -299,6 +371,10 @@
 
 .rounded-lg {
   border-radius: 0.5rem
+}
+
+.rounded-xl {
+  border-radius: 0.75rem
 }
 
 .border {
@@ -401,6 +477,14 @@
   padding: 0.75rem
 }
 
+.p-8 {
+  padding: 2rem
+}
+
+.p-6 {
+  padding: 1.5rem
+}
+
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem
@@ -488,6 +572,14 @@
   padding-bottom: 8rem
 }
 
+.pt-14 {
+  padding-top: 3.5rem
+}
+
+.pt-10 {
+  padding-top: 2.5rem
+}
+
 .text-center {
   text-align: center
 }
@@ -538,6 +630,11 @@
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem
 }
 
 .font-light {
@@ -753,6 +850,14 @@ body {
 }
 
 @media (min-width: 1024px) {
+  .lg\:-left-60 {
+    left: -15rem
+  }
+
+  .lg\:top-0 {
+    top: 0px
+  }
+
   .lg\:mx-0 {
     margin-left: 0px;
     margin-right: 0px
@@ -771,8 +876,20 @@ body {
     margin-top: 1rem
   }
 
+  .lg\:mb-16 {
+    margin-bottom: 4rem
+  }
+
+  .lg\:mt-16 {
+    margin-top: 4rem
+  }
+
   .lg\:block {
     display: block
+  }
+
+  .lg\:inline-block {
+    display: inline-block
   }
 
   .lg\:inline {
@@ -831,6 +948,10 @@ body {
     width: 2rem
   }
 
+  .lg\:w-20 {
+    width: 5rem
+  }
+
   .lg\:flex-row {
     flex-direction: row
   }
@@ -884,6 +1005,11 @@ body {
   .lg\:px-16 {
     padding-left: 4rem;
     padding-right: 4rem
+  }
+
+  .lg\:px-32 {
+    padding-left: 8rem;
+    padding-right: 8rem
   }
 
   .lg\:pb-56 {

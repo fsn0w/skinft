@@ -37,8 +37,8 @@ get_header();
 
 <!-- /Title Section -->
 <!-- What is SkinFT? -->
-<div class="container mx-auto pt-24 lg:pb-10" id="skinft">
-    <div class="w-full mb-16 text-center"><h2><span>W</span>hat is <span>S</span>kin<span>FT?</span></h2></div>
+<div class="container mx-auto pt-10 lg:pt-24 lg:pb-10" id="skinft">
+    <div class="w-full mb-10 lg:mb-16 text-center"><h2><span>W</span>hat is <span>S</span>kin<span>FT?</span></h2></div>
     <div class="lg:flex lg:gap-4">
         <div class="w-2/5 hidden lg:block">
             <div class="flex justify-around w-full mb-4">

@@ -45,7 +45,7 @@ jQuery(document).ready(function($) {
 
 	const mintMin = 1;
     const mintMax = 7;
-	const tokenPrice = 0.019;
+	const tokenPrice = 0.077;
 
     $('.minus').click(function () {
         var $input = $(this).parent().find('input');
@@ -54,7 +54,7 @@ jQuery(document).ready(function($) {
         $input.val(count);
         $input.change();
 
-		$('.mint-price').val((parseInt($input.val())*tokenPrice).toFixed(2));
+		$('.mint-price').val((parseInt($input.val())*tokenPrice).toFixed(3));
 		$('.mint-price').change();
 
         return false;
@@ -67,7 +67,7 @@ jQuery(document).ready(function($) {
             $input.val(parseInt($input.val()) + 1);
             $input.change();
 
-			$('.mint-price').val((parseInt($input.val())*tokenPrice).toFixed(2));
+			$('.mint-price').val((parseInt($input.val())*tokenPrice).toFixed(3));
 			$('.mint-price').change();
         }
 
