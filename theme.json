@@ -30,6 +30,11 @@
           "name": "MenuLine",
           "slug": "menuline",
           "color": "#13101e80"
+        },
+        {
+          "name": "Counter",
+          "slug": "counter",
+          "color": "#493729"
         }
       ]
     },
