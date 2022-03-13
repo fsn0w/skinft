@@ -44,7 +44,7 @@ if ($token < 1 || $token > 7777) {
                 </div>
                 <div class="w-full lg:flex lg:flex-col lg:justify-center lg:w-1/3">
                     <img src="https://ipfs.io/<?=$nft_skin_image?>" class="mx-auto mb-3"/>
-                    <a download="<?=$token?>_ingame.png" href="https://ipfs.io/<?=$nft_skin_image?>" target="_blank" class="block underline">Download in-game image</a>
+                    <a download="<?=$token?>.png" href="https://ipfs.io/<?=$nft_skin_image?>" target="_blank" class="block underline">Download in-game image</a>
                 </div>
             </div> 
         </div>
