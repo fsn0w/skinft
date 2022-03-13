@@ -40,11 +40,11 @@ if ($token < 1 || $token > 7777) {
                 <div class="w-full mb-11 lg:order-3 lg:w-1/3">
                     <h2 class="lg:hidden text-center text-light mb-6 lg:mb-16 text-lg lg:block"><span>S</span>kin<span>FT #<?=$token?></span></h2>
                     <img src="https://ipfs.io/<?=$nft_image?>" class="mx-auto mb-3"/>
-                    <a href="" class="block underline">Download 3d model image</a>
+                    <a href="https://ipfs.io/<?=$nft_image?>" target="_blank" class="block underline">Download 3d model image</a>
                 </div>
                 <div class="w-full lg:flex lg:flex-col lg:justify-center lg:w-1/3">
                     <img src="https://ipfs.io/<?=$nft_skin_image?>" class="mx-auto mb-3"/>
-                    <a href="" class="block underline">Download in-game image</a>
+                    <a href="https://ipfs.io/<?=$nft_skin_image?>" target="_blank" class="block underline">Download in-game image</a>
                 </div>
             </div> 
         </div>
