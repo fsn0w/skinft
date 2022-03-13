@@ -21,7 +21,7 @@ get_header();
                 <p>SkinFT is an NFT skin collection designed for <span class="minecraft">MineCraft</span></p>
             </div>
             <div class="flex justify-between items-center mt-5 lg:w-11/12">
-                <div><a href="" class="inline-block text-xl lg:text-4xl text-white bg-primary p-3 rounded font-normal hover:bg-[#56952b] mr-2 whitespace-nowrap">Mint a SkinFT</a></div>
+                <div><a href="/mint/" class="inline-block text-xl lg:text-4xl text-white bg-primary p-3 rounded font-normal hover:bg-[#56952b] mr-2 whitespace-nowrap">Mint a SkinFT</a></div>
                 <div class="text-center text-xs lg:text-xl">
                     <img src="<?=get_stylesheet_directory_uri()?>/assets/img/skin-sample.png" class=" w-28 h-auto lg:w-auto mx-auto mb-4" />
                     <p>In-game image file</p>
