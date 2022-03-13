@@ -6,7 +6,13 @@
 
 get_header();
 
+$path = "/var/www/html/wp-content/themes/skinft/assets/json/";
+
 $token = get_query_var('token');
+
+$json = file_get_contents($path."real/".$token);
+$nft = json_decode($json, true);
+
 ?>
 
 <div id="content" class="relative site-content text-light">
@@ -18,6 +24,7 @@ $token = get_query_var('token');
             <h2 class="hidden text-center text-light mb-6 lg:mb-16 text-lg lg:block"><span>S</span>kin<span>FT #<?=$token?></span></h2>
             <div class="w-full flex flex-col justify-center lg:flex-row font-bold">
                 <div class="flex flex-row w-full justify-around lg:w-1/3 lg:justify-center">
+                    <?=$nft['image']?>
                     <span class="lg:px-3 mb-11 pt-2">Show SkinFT #</span>
                     <form action="" type="GET" class="flex flex-row rounded-xl border-4 border-light h-11 text-lg lg:text-2xl outline-none">
                         <input type="text" name="nft" id="nft_num" value="<?=$token?>" class="px-4 h-9 w-24 font-light text-light bg-transparent text-center focus-visible:outline-none" autofocus>
