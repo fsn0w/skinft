@@ -10,11 +10,20 @@ $path = "/var/www/html/wp-content/themes/skinft/assets/json/";
 
 $token = get_query_var('token');
 
-$json = file_get_contents($path."real/".$token);
-$nft = json_decode($json, true);
+if ($token < 1 && $token > 7777) {
+    $token = "wrong";
+    $nft_image = '';
+    $nft_skin_image = '';
+}
+else {
 
-$nft_image = str_replace("://", "/", $nft['image']);
-$nft_skin_image = str_replace("://", "/", $nft['skin image']);
+    $json = file_get_contents($path."real/".$token);
+    $nft = json_decode($json, true);
+    
+    $nft_image = str_replace("://", "/", $nft['image']);
+    $nft_skin_image = str_replace("://", "/", $nft['skin image']);
+
+}
 
 ?>
 
