@@ -10,7 +10,7 @@ $path = "/var/www/html/wp-content/themes/skinft/assets/json/";
 
 $token = get_query_var('token');
 
-if ($token < 1 && $token > 7777) {
+if ($token < 1 || $token > 7777) {
     $token = "wrong";
     $nft_image = '';
     $nft_skin_image = '';
