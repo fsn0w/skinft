@@ -13,6 +13,8 @@ $token = get_query_var('token');
 $json = file_get_contents($path."real/".$token);
 $nft = json_decode($json, true);
 
+$nft_img = str_replace("://", "/", $nft['image']);
+
 ?>
 
 <div id="content" class="relative site-content text-light">
@@ -25,10 +27,6 @@ $nft = json_decode($json, true);
             <div class="w-full flex flex-col justify-center lg:flex-row font-bold">
                 <div class="flex flex-row w-full justify-around lg:w-1/3 lg:justify-center">
                     NFT: <?=$nft['image']?>
-
-                    <?php 
-                    var_dump($nft);
-                    ?>
                     <span class="lg:px-3 mb-11 pt-2">Show SkinFT #</span>
                     <form action="" type="GET" class="flex flex-row rounded-xl border-4 border-light h-11 text-lg lg:text-2xl outline-none">
                         <input type="text" name="nft" id="nft_num" value="<?=$token?>" class="px-4 h-9 w-24 font-light text-light bg-transparent text-center focus-visible:outline-none" autofocus>
@@ -37,7 +35,7 @@ $nft = json_decode($json, true);
                 </div>
                 <div class="w-full mb-11 lg:order-3 lg:w-1/3">
                     <h2 class="lg:hidden text-center text-light mb-6 lg:mb-16 text-lg lg:block"><span>S</span>kin<span>FT #<?=$token?></span></h2>
-                    <img src="<?=get_stylesheet_directory_uri()?>/assets/img/nft/3d/322.png" class="mx-auto mb-3"/>
+                    <img src="https://ipfs.io/<?=$nft_img?>" class="mx-auto mb-3"/>
                     <a href="" class="block underline">Download 3d model image</a>
                 </div>
                 <div class="w-full lg:flex lg:flex-col lg:justify-center lg:w-1/3">
