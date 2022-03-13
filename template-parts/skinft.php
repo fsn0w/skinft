@@ -13,7 +13,8 @@ $token = get_query_var('token');
 $json = file_get_contents($path."real/".$token);
 $nft = json_decode($json, true);
 
-$nft_img = str_replace("://", "/", $nft['image']);
+$nft_image = str_replace("://", "/", $nft['image']);
+$nft_skin_image = str_replace("://", "/", $nft['skin image']);
 
 ?>
 
@@ -34,11 +35,11 @@ $nft_img = str_replace("://", "/", $nft['image']);
                 </div>
                 <div class="w-full mb-11 lg:order-3 lg:w-1/3">
                     <h2 class="lg:hidden text-center text-light mb-6 lg:mb-16 text-lg lg:block"><span>S</span>kin<span>FT #<?=$token?></span></h2>
-                    <img src="https://ipfs.io/<?=$nft_img?>" class="mx-auto mb-3"/>
+                    <img src="https://ipfs.io/<?=$nft_image?>" class="mx-auto mb-3"/>
                     <a href="" class="block underline">Download 3d model image</a>
                 </div>
                 <div class="w-full lg:flex lg:flex-col lg:justify-center lg:w-1/3">
-                    <img src="<?=get_stylesheet_directory_uri()?>/assets/img/nft/ingame/322.png" class="mx-auto mb-3"/>
+                    <img src="https://ipfs.io/<?=$nft_skin_image?>" class="mx-auto mb-3"/>
                     <a href="" class="block underline">Download in-game image</a>
                 </div>
             </div> 
