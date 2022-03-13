@@ -32,8 +32,8 @@ if ($token < 1 || $token > 7777) {
             <div class="w-full flex flex-col justify-center lg:flex-row font-bold">
                 <div class="flex flex-row w-full justify-around lg:w-1/3 lg:justify-center">
                     <span class="lg:px-3 mb-11 pt-2">Show SkinFT #</span>
-                    <form action="" type="GET" class="flex flex-row rounded-xl border-4 border-light h-11 text-lg lg:text-2xl outline-none">
-                        <input type="text" name="nft" id="nft_num" value="<?=$token?>" class="px-4 h-9 w-24 font-light text-light bg-transparent text-center focus-visible:outline-none" autofocus>
+                    <form onsubmit="window.location = 'https://skinft.io/nft/'+nft.value; return false;" class="flex flex-row rounded-xl border-4 border-light h-11 text-lg lg:text-2xl outline-none">
+                        <input type="text" name="nft" id="nft" value="<?=$token?>" class="px-4 h-9 w-24 font-light text-light bg-transparent text-center focus-visible:outline-none" autofocus>
                         <input type="submit" value="Show" class="h-9 w-24 bg-light text-counter font-bold cursor-pointer">
                     </form>
                 </div>
