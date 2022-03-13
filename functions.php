@@ -159,3 +159,20 @@ add_filter( 'wp_check_filetype_and_ext', function($data, $file, $filename, $mime
   /* remove '...' (3 dots) filter */
 
   remove_filter( 'the_content', 'wptexturize' );
+
+  /* Hide Author of the Page from Snippet */
+
+add_filter( 'oembed_response_data', 'disable_embeds_filter_oembed_response_data_' );
+function disable_embeds_filter_oembed_response_data_( $data ) {
+    unset($data['author_url']);
+    unset($data['author_name']);
+    return $data;
+}
+
+  /* NFT Page */
+
+  add_action( 'init', 'rewrite_rule_my' );
+  function rewrite_rule_my(){
+	  add_rewrite_rule( '^(nft)/([^/]*)/?', 'index.php?pagename=$matches[1]&token=$matches[2]', 'top' );
+	  add_rewrite_tag( '%token%', '([^&]+)' );
+  }
