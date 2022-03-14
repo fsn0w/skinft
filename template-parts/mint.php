@@ -6,7 +6,7 @@
 
 get_header();
 
-$start = 'Mar 28, 2022 08:00:00';
+$start = 'Apr 8, 2022 08:00:00';
 
 $cdate = strtotime(current_time("M j, Y H:i:s"));
 $sdate = strtotime($start);
@@ -54,7 +54,7 @@ $mint = ((isset($_GET['timeroff']) || $cdate>$sdate)?true:false);
                                 <li><div id="seconds"></div><span>Seconds</span></li>
                             </ul>
                 </span>
-                <p class="font-medium text-xl lg:text-4xl">See you on Monday, March 28,<br> at 8:00AM EST</p>
+                <p class="font-medium text-xl lg:text-4xl">See you on Friday, April 8,<br> at 8:00AM EST</p>
                 <img src="<?=get_stylesheet_directory_uri()?>/assets/img/mint-3d-model-front.png" class="absolute h-32 w-auto left-4 -bottom-24 lg:hidden" />
 <?php 
     }

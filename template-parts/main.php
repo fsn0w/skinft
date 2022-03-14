@@ -15,10 +15,16 @@ get_header();
 
     <div class="container mx-auto flex">
         <div class="w-full lg:w-3/5 text-sm lg:text-3xl font-thin">
-            <h1>an nft collection you can play with</h1>
-            <div class="w-3/4">
-                <p>The first ever NFT you can use <nobr>in-game</nobr> from the get go.</p>
-                <p>SkinFT is an NFT skin collection designed for <span class="minecraft">MineCraft</span></p>
+            <div class="flex lg:block">
+                <div class="w-[55%] lg:w-full">
+                    <h1>an nft collection you can play with</h1>
+                    <p class="lg:w-3/4">The first ever NFT you can use <nobr>in-game</nobr> from the get go.</p>
+                    <p class="lg:w-3/4">SkinFT is an NFT skin collection designed for <span class="minecraft">MineCraft</span></p>
+                </div>
+                <div class="w-[45%] text-center lg:hidden text-xs">
+                    <img src="<?=get_stylesheet_directory_uri()?>/assets/img/3-model-sample-mob.png" class="mx-auto mb-4" />
+                    <p class="mb-0">3d model of the SkinFT</p>
+                </div>
             </div>
             <div class="flex justify-between items-center mt-5 lg:w-11/12">
                 <div><a href="/mint/" class="inline-block text-xl lg:text-4xl text-white bg-primary p-3 rounded font-normal hover:bg-[#56952b] mr-2 whitespace-nowrap">Mint a SkinFT</a></div>
