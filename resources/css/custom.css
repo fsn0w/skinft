@@ -99,7 +99,8 @@
     }
 
     .main-menu-icon { 
-        * svg {
+        @apply border;
+        svg {
             @apply inline lgblock h-6 w-6 mt-2 hover:opacity-70 fill-dark lg:fill-white;
         }
     }
