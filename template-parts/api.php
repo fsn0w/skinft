@@ -13,7 +13,7 @@ $after_reveal = false;
 $contract="0xcFf1D4DBF5C54546a553866C12094a624a33450a";
 $api="PVP6WAPH57Z2TCHRTA5PCTX9H5Q866IC75";
 
-$token = get_query_var('token');
+$token = get_query_var('api');
 
 $result = file_get_contents("https://api-rinkeby.etherscan.io/api?module=stats&action=tokensupply&contractaddress=".$contract."&apikey=".$api);
 $contract_supply = json_decode($result, true);
