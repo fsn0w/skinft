@@ -11,5 +11,4 @@ h-6
 w-6 
 mt-2 
 opacity-70
-lg:icon-tw
-icon-tw
+main-menu-icon
