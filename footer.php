@@ -122,11 +122,11 @@ function supplyTotal() {
 
 async function mint(maxTokens,tokens,amount) {
             console.log("Mint " + tokens + " // Amount: "+amount+" ETH")
-            const wombatContract = new web3.eth.Contract(
+            const skinftContract = new web3.eth.Contract(
                         abi,
                         contactAddress
             );
-			wombatContract.methods.mintSale(tokens).send({ from: ethereum.selectedAddress, value: web3.utils.toWei(amount, "ether"), }).then(receipt=> {console.log(receipt)});
+			skinftContract.methods.mintSale(tokens).send({ from: ethereum.selectedAddress, value: web3.utils.toWei(amount, "ether"), }).then(receipt=> {console.log(receipt)});
         }
 
 
@@ -190,6 +190,20 @@ jQuery(document).ready(function() {
 			walletBtn.click(function() {
                 connect()
             });
+
+			// Mint form
+
+			mintBtn.click(function() {
+
+				var maxTokens = "7";
+				var tokens = jQuery("#mint_n").val();
+				var amount = 0.077*tokens;
+
+				if (tokens>0) {
+					mint(maxTokens, tokens.toString(), amount.toString())
+				}
+			});
+
 })
 
 </script>
