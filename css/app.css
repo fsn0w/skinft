@@ -1448,6 +1448,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .main-menu-icon {
   margin-top: 0.5rem;
+  display: inline;
   height: 1.5rem;
   width: 1.5rem;
   fill: #72432B;

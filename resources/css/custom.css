@@ -99,7 +99,7 @@
     }
 
     .main-menu-icon {
-        @apply h-6 w-6 mt-2 hover:opacity-70 fill-secondary lg:fill-white;
+        @apply inline h-6 w-6 mt-2 hover:opacity-70 fill-secondary lg:fill-white;
     }
 
 /* MINT COUNTER */
