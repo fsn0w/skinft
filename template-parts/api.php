@@ -10,6 +10,8 @@ $path = "/var/www/html/wp-content/themes/skinft/assets/json/";
 
 $after_reveal = false;
 
+$after_reveal = (isset($_GET['after_reveal'])?true:$after_reveal);
+
 $contract="0xcFf1D4DBF5C54546a553866C12094a624a33450a";
 $api="PVP6WAPH57Z2TCHRTA5PCTX9H5Q866IC75";
 
