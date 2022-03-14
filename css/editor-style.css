@@ -480,6 +480,10 @@
   fill: #BFA084
 }
 
+.fill-secondary {
+  fill: #72432B
+}
+
 .p-4 {
   padding: 1rem
 }

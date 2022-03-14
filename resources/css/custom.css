@@ -98,11 +98,8 @@
         }
     }
 
-    .main-menu-icon { 
-        @apply border;
-        & a>svg {
-            @apply inline lgblock h-6 w-6 mt-2 hover:opacity-70 fill-dark lg:fill-white;
-        }
+    .main-menu-icon {
+        @apply h-6 w-6 mt-2 hover:opacity-70 fill-secondary lg:fill-white;
     }
 
 /* MINT COUNTER */

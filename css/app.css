@@ -988,6 +988,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-repeat: repeat-x;
 }
 
+.fill-dark {
+  fill: #BFA084;
+}
+
+.fill-secondary {
+  fill: #72432B;
+}
+
 .p-4 {
   padding: 1rem;
 }
@@ -1438,6 +1446,23 @@ Ensure the default browser behavior of the `hidden` attribute.
     display: none;
   }
 
+.main-menu-icon {
+  margin-top: 0.5rem;
+  height: 1.5rem;
+  width: 1.5rem;
+  fill: #72432B;
+}
+
+.main-menu-icon:hover {
+  opacity: 0.7;
+}
+
+@media (min-width: 1024px) {
+  .main-menu-icon {
+    fill: #fff;
+  }
+}
+
 /* MINT COUNTER */
 
 #mintcounter li {
@@ -1513,6 +1538,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .hover\:bg-\[\#56952b\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(86 149 43 / var(--tw-bg-opacity));
+}
+
+.hover\:opacity-70:hover {
+  opacity: 0.7;
 }
 
 .hover\:brightness-125:hover {
@@ -1723,6 +1752,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:bg-auto {
     background-size: auto;
+  }
+
+  .lg\:fill-white {
+    fill: #fff;
   }
 
   .lg\:p-0 {
