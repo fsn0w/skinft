@@ -22,9 +22,6 @@ if ($token < 1 || $token > 7777) {
 if ($after_reveal && $token <= $contract_supply["result"]):
   $json = file_get_contents($path."real/".$token);
 
-  $nft = json_decode($json, true);
-  $nft_image = str_replace("://", "/", $nft['image']);
-  $nft_skin_image = str_replace("://", "/", $nft['skin image']);
 
 else: 
   $json = '{"name": "SkinFT #'.$token.'", "image": "ipfs://Qmar8wmqb6JZjKwrxfSxtVf81KqJH3qEZz4uy21hk43YyV"}';
