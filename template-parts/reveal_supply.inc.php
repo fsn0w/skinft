@@ -13,7 +13,7 @@ $api="PVP6WAPH57Z2TCHRTA5PCTX9H5Q866IC75";
 $result = file_get_contents($network."/api?module=stats&action=tokensupply&contractaddress=".$contract."&apikey=".$api);
 $contract_supply = json_decode($result, true);
 
-$token = (isset(get_query_var('api') ? get_query_var('api') : get_query_var('token'));
+$token = (isset(get_query_var('api')) ? get_query_var('api') : get_query_var('token'));
 
 if ($token < 1 || $token > 7777) {
     $token = 1;
@@ -22,6 +22,9 @@ if ($token < 1 || $token > 7777) {
 if ($after_reveal && $token <= $contract_supply["result"]):
   $json = file_get_contents($path."real/".$token);
 
+  $nft = json_decode($json, true);
+  $nft_image = str_replace("://", "/", $nft['image']);
+  $nft_skin_image = str_replace("://", "/", $nft['skin image']);
 
 else: 
   $json = '{"name": "SkinFT #'.$token.'", "image": "ipfs://Qmar8wmqb6JZjKwrxfSxtVf81KqJH3qEZz4uy21hk43YyV"}';
