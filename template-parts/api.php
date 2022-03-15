@@ -6,7 +6,7 @@
 
 header('Content-Type: application/json');
 
-include_once('reveal_supply.inc.php'); // $path, $after_reveal, $contract_supply
+include_once('reveal_supply.inc.php'); // $path, $after_reveal, $contract_supply, $json, $nft
 
 if($json === FALSE):
     echo 'missing';

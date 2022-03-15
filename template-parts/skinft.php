@@ -6,19 +6,7 @@
 
 get_header();
 
-$path = "/var/www/html/wp-content/themes/skinft/assets/json/";
-
-$token = get_query_var('token');
-
-if ($token < 1 || $token > 7777) {
-    $token = 1;
-}
-
-    $json = file_get_contents($path."real/".$token);
-    $nft = json_decode($json, true);
-    
-    $nft_image = str_replace("://", "/", $nft['image']);
-    $nft_skin_image = str_replace("://", "/", $nft['skin image']);
+include_once('reveal_supply.inc.php'); // $path, $after_reveal, $contract_supply, $json, $nft
 
 ?>
 
