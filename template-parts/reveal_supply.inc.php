@@ -11,7 +11,7 @@ $after_reveal = (isset($_GET['after_reveal'])?true:$after_reveal);
 $result = file_get_contents($network."/api?module=stats&action=tokensupply&contractaddress=".$contract."&apikey=".$api);
 $contract_supply = json_decode($result, true);
 
-$token = (isset(get_query_var('api')) ? get_query_var('api') : get_query_var('token'));
+$token = (get_query_var('api') !== '' ? get_query_var('api') : get_query_var('token'));
 
 if ($token < 1 || $token > 7777) {
     $token = 1;
