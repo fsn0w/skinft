@@ -40,7 +40,7 @@ include_once('reveal_supply.inc.php'); // $path, $after_reveal, $contract_supply
 <?php
     } else {
 ?>
-                <div class="w-full text-center lg:w-2/3">
+                <div class="w-full text-center lg:w-2/4">
                     <h2><span>T</span>his <span>S</span>kin<span>FT</span> was not revealed yet</h2>
                 </div>
 <?php
