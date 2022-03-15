@@ -8,7 +8,7 @@ header('Content-Type: application/json');
 
 include_once('reveal_supply.inc.php'); // $path, $after_reveal, $contract_supply
 
-$token = get_query_var('token');
+$token = get_query_var('api');
 
 if ($after_reveal && $token <= $contract_supply["result"]):
    $json = file_get_contents($path."real/".$token);
