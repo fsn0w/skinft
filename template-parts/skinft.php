@@ -25,6 +25,9 @@ include_once('reveal_supply.inc.php'); // $path, $after_reveal, $contract_supply
                         <input type="submit" value="Show" class="h-9 w-24 bg-light text-counter font-bold cursor-pointer">
                     </form>
                 </div>
+<?php
+    if ($nft!==false) {
+?>
                 <div class="w-full mb-11 lg:order-3 lg:w-1/3">
                     <h2 class="lg:hidden text-center text-light mb-6 lg:mb-16 text-lg lg:block"><span>S</span>kin<span>FT #<?=$token?></span></h2>
                     <img src="https://ipfs.io/<?=$nft_image?>" class="mx-auto mb-3"/>
@@ -34,6 +37,15 @@ include_once('reveal_supply.inc.php'); // $path, $after_reveal, $contract_supply
                     <img src="https://ipfs.io/<?=$nft_skin_image?>" class="mx-auto mb-3"/>
                     <a download="<?=$token?>.png" href="https://ipfs.io/<?=$nft_skin_image?>" target="_blank" class="block underline">Download in-game image</a>
                 </div>
+<?php
+    } else {
+?>
+                <div class="w-full text-center lg:w-2/3">
+                    <h2><span>T</span>his <span>S</span>kin<span>FT</span> was not revealed yet</h2>
+                </div>
+<?php
+    }
+?>
             </div> 
         </div>
     </div>
