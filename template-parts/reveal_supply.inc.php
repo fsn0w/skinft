@@ -13,8 +13,6 @@ $contract_supply = json_decode($result, true);
 
 $token = (isset(get_query_var('api')) ? get_query_var('api') : get_query_var('token'));
 
-echo 'TOKEN !!! > '.get_query_var('token');
-
 if ($token < 1 || $token > 7777) {
     $token = 1;
 }
