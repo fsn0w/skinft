@@ -56,23 +56,20 @@ $mint = ((isset($_GET['timeroff']) || $cdate>$sdate)?true:false);
                 </span>
                 <p class="font-medium text-xl lg:text-4xl">See you on Friday, April 8,<br> at 8:00AM EST</p>
                 <img src="<?=get_stylesheet_directory_uri()?>/assets/img/mint-3d-model-front.png" class="absolute h-32 w-auto left-4 -bottom-24 lg:hidden" />
-<?php 
-    }
-?>
-            </div>
-</div>
 
-<!-- /Mint Section -->
-
-</div>
-
-<script>
+        <script>
 (function () {
       
       let countUpDate = new Date("<?=$start?>").getTime();
       let x = setInterval(function() {    
 
-      var now = new Date().getTime();
+      /* 
+        var now = new Date().getTime() + (new Date().getTimezoneOffset() * 60000); 
+      */
+
+      const str = new Date().toLocaleString('en-US', { timeZone: 'America/New_York' });
+      now = new Date(str).getTime();
+
       var distance = countUpDate - now;
 
         if (distance < 0) {
@@ -81,8 +78,9 @@ $mint = ((isset($_GET['timeroff']) || $cdate>$sdate)?true:false);
           document.getElementById("hours").innerText = "0",
           document.getElementById("minutes").innerText = "0",
           document.getElementById("seconds").innerText = "0";
-
+          
           clearInterval(x);
+          location.reload();
         }
         else {
             var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -99,6 +97,15 @@ $mint = ((isset($_GET['timeroff']) || $cdate>$sdate)?true:false);
 
   }());
     </script>
+<?php 
+    }
+?>
+            </div>
+</div>
+
+<!-- /Mint Section -->
+
+</div>
 
 <?php
 
