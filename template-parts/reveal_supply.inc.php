@@ -1,12 +1,15 @@
 <?php
 
-$after_reveal = false; // false or true
+$reveal_time = 'Apr 10, 2022 08:00:00';
+
 $contract = "0xcFf1D4DBF5C54546a553866C12094a624a33450a";
 $network = "https://api-rinkeby.etherscan.io";
 $path = "/var/www/html/wp-content/themes/skinft/assets/json/";
 $api = "PVP6WAPH57Z2TCHRTA5PCTX9H5Q866IC75";
 
-$after_reveal = (isset($_GET['after_reveal'])?true:$after_reveal);
+$cdate = strtotime(current_time("M j, Y H:i:s"));
+$sdate = strtotime($reveal_time);
+$after_reveal = ((isset($_GET['after_reveal']) || $cdate>$sdate)?true:false);
 
 $result = file_get_contents($network."/api?module=stats&action=tokensupply&contractaddress=".$contract."&apikey=".$api);
 $contract_supply = json_decode($result, true);
