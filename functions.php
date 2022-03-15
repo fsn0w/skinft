@@ -182,7 +182,7 @@ function disable_embeds_filter_oembed_response_data_( $data ) {
 	add_action( 'init', 'rewrite_rule_api' );
 	function rewrite_rule_api(){
 		add_rewrite_rule( '^(api)/([^/]*)/?', 'index.php?pagename=$matches[1]&api=$matches[2]', 'top' );
-		add_rewrite_tag( '%api%', '([^&]+)' );
+		add_rewrite_tag( '%token%', '([^&]+)' );
 	}
 
 	/* SVG MENU */
