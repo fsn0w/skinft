@@ -14,7 +14,7 @@ get_header();
 <div class="w-full pt-32 lg:pt-52 pb-10 bg-title">
 
     <div class="container mx-auto flex">
-        <div class="w-full lg:w-3/5 text-sm lg:text-3xl font-thin">
+        <div class="w-full lg:w-3/5 text-base lg:text-3xl font-thin">
             <div class="flex lg:block">
                 <div class="w-[55%] lg:w-full">
                     <h1>an nft collection you can play with</h1>
@@ -61,7 +61,7 @@ get_header();
             </div>
         </div>
         <div class="w-full lg:w-3/5 lg:flex lg:justify-between lg:flex-col">
-            <p>SkinFT is a first of its kind collection of 7777 unique Minecraft skins. Each SkinFT is algorithmically composed from a pool of professionaly designed elements.</p>
+            <p>SkinFT is a first of its kind collection of 7777 unique Minecraft skins. Each SkinFT is algorithmically composed from a pool of professionally designed elements.</p>
             <div class="flex justify-around w-full mb-8 items-center lg:hidden">
                 <img src="<?=get_stylesheet_directory_uri()?>/assets/img/skinft-r1-1.png" class="w-auto h-[79px]"/>
                 <img src="<?=get_stylesheet_directory_uri()?>/assets/img/skinft-r1-2.png" class="w-auto h-[129px]"/>

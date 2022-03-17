@@ -112,12 +112,12 @@
   margin-bottom: 0.5rem
 }
 
-.mt-8 {
-  margin-top: 2rem
+.mt-9 {
+  margin-top: 2.25rem
 }
 
-.mt-5 {
-  margin-top: 1.25rem
+.mt-14 {
+  margin-top: 3.5rem
 }
 
 .mb-4 {
@@ -130,6 +130,14 @@
 
 .mb-12 {
   margin-bottom: 3rem
+}
+
+.mb-0 {
+  margin-bottom: 0px
+}
+
+.mt-5 {
+  margin-top: 1.25rem
 }
 
 .mr-2 {
@@ -162,22 +170,6 @@
 
 .mb-11 {
   margin-bottom: 2.75rem
-}
-
-.mt-9 {
-  margin-top: 2.25rem
-}
-
-.-mt-2 {
-  margin-top: -0.5rem
-}
-
-.mb-0 {
-  margin-bottom: 0px
-}
-
-.mt-14 {
-  margin-top: 3.5rem
 }
 
 .block {
@@ -260,8 +252,12 @@
   width: 2.5rem
 }
 
-.w-3\/4 {
-  width: 75%
+.w-\[55\%\] {
+  width: 55%
+}
+
+.w-\[45\%\] {
+  width: 45%
 }
 
 .w-28 {
@@ -290,22 +286,6 @@
 
 .w-24 {
   width: 6rem
-}
-
-.w-1\/2 {
-  width: 50%
-}
-
-.w-3\/5 {
-  width: 60%
-}
-
-.w-\[55\%\] {
-  width: 55%
-}
-
-.w-\[45\%\] {
-  width: 45%
 }
 
 .max-w-sm {
@@ -476,10 +456,6 @@
   background-repeat: repeat-x
 }
 
-.fill-dark {
-  fill: #BFA084
-}
-
 .fill-secondary {
   fill: #72432B
 }
@@ -490,10 +466,6 @@
 
 .p-3 {
   padding: 0.75rem
-}
-
-.p-6 {
-  padding: 1.5rem
 }
 
 .p-2 {
@@ -518,11 +490,6 @@
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem
-}
-
-.px-2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem
 }
 
 .pt-12 {
@@ -874,6 +841,10 @@ body {
     margin-top: 0px
   }
 
+  .lg\:-mt-2 {
+    margin-top: -0.5rem
+  }
+
   .lg\:mb-16 {
     margin-bottom: 4rem
   }
@@ -894,8 +865,8 @@ body {
     margin-bottom: 0px
   }
 
-  .lg\:-mt-2 {
-    margin-top: -0.5rem
+  .lg\:mt-20 {
+    margin-top: 5rem
   }
 
   .lg\:block {
@@ -946,6 +917,14 @@ body {
     width: 60%
   }
 
+  .lg\:w-full {
+    width: 100%
+  }
+
+  .lg\:w-3\/4 {
+    width: 75%
+  }
+
   .lg\:w-11\/12 {
     width: 91.666667%
   }
@@ -968,14 +947,6 @@ body {
 
   .lg\:w-1\/3 {
     width: 33.333333%
-  }
-
-  .lg\:w-full {
-    width: 100%
-  }
-
-  .lg\:w-3\/4 {
-    width: 75%
   }
 
   .lg\:min-w-\[630px\] {
@@ -1020,10 +991,6 @@ body {
 
   .lg\:bg-auto {
     background-size: auto
-  }
-
-  .lg\:fill-white {
-    fill: #fff
   }
 
   .lg\:p-0 {
@@ -1120,7 +1087,67 @@ body {
 }
 
 @media (min-width: 1280px) {
+  .xl\:-mt-2 {
+    margin-top: -0.5rem
+  }
+
+  .xl\:mt-0 {
+    margin-top: 0px
+  }
+
+  .xl\:block {
+    display: block
+  }
+
+  .xl\:flex {
+    display: flex
+  }
+
+  .xl\:hidden {
+    display: none
+  }
+
+  .xl\:h-40 {
+    height: 10rem
+  }
+
+  .xl\:items-center {
+    align-items: center
+  }
+
+  .xl\:justify-between {
+    justify-content: space-between
+  }
+
   .xl\:bg-transparent {
     background-color: transparent
+  }
+
+  .xl\:bg-menuline {
+    background-color: #13101e80
+  }
+
+  .xl\:p-0 {
+    padding: 0px
+  }
+
+  .xl\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem
+  }
+
+  .xl\:leading-8 {
+    line-height: 2rem
+  }
+
+  .xl\:text-white {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity))
+  }
+
+  .xl\:shadow-none {
+    --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
   }
 }

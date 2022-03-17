@@ -43,6 +43,13 @@
     }
 }
 
+
+.container {
+
+    @apply px-4;
+
+}
+
 /* BACKGROUNDs */
 
 .bg-header {

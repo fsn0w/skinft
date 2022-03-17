@@ -9,24 +9,24 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class( 'bg-secondary antialiased font-sans font-thin text-base lg:text-2xl lg:leading-8' ); ?>>
+<body <?php body_class( 'bg-secondary antialiased font-sans font-thin text-base xl:text-2xl xl:leading-8' ); ?>>
 
 <?php do_action( 'skinft_site_before' ); ?>
 
 <div id="page" class="flex flex-col overflow-x-hidden">
 
 	<?php do_action( 'skinft_header' ); ?>
-	<header class="absolute w-full z-50 bg-header lg:h-40">
-		<div class="mx-auto lg:bg-menuline mt-9">
-			<div class="mx-auto lg:flex lg:justify-between lg:items-center container">
-				<div class="w-full flex justify-between items-center mt-14 lg:mt-0">
+	<header class="absolute w-full z-50 bg-header xl:h-40">
+		<div class="mx-auto xl:bg-menuline mt-9 lg:mt-16">
+			<div class="mx-auto xl:flex xl:justify-between xl:items-center container">
+				<div class="w-full flex justify-between items-center mt-14 xl:mt-0">
 					<div>
 						<a href="/" title="SkinFT">
 							<img src="<?=get_stylesheet_directory_uri()?>/assets/img/skinft.svg" alt="SkinFT" height="41" width="179" class=" max-w-[160px]">
 						</a>
 					</div>
 
-					<div class="lg:hidden">
+					<div class="xl:hidden">
 						<a href="#" aria-label="Toggle navigation" id="primary-menu-toggle">
 							<svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M5.6879 5.38508H3.44181H2.40861C1.95542 5.38508 1.52602 5.36177 1.19571 5.3268C0.865407 5.29183 0.0528493 5.20116 0.0158548 4.47327C0.0158548 4.36318 0 3.91116 0 3.69616C0 3.48116 0 3.2273 0 3.14052C0 3.05374 0.0105699 2.94883 0.0158548 2.88148C0.0158548 2.85169 0.0158548 2.81673 0.00660616 2.78564C0 2.66907 0 2.06034 0 2.05256C0 1.8557 0 1.57852 0.00660616 1.45807C0.0475643 0.392134 1.9726 0.36882 1.98845 0.367525L8.24713 0.354574L11.4947 0.346802H12.8516C14.2204 0.346802 15.8495 0.346802 17.83 0.354574H19.7154L22.1927 0.380477C22.5468 0.380477 22.9855 0.576051 22.9974 1.46066C22.9974 1.5591 22.9974 1.83627 22.9974 2.07717L22.9749 2.61338V2.64705C22.963 2.72736 22.9524 2.81025 22.9432 2.86853C22.9432 2.90221 22.959 2.99805 22.959 2.99805L22.9789 3.29983C22.9934 3.65342 23.0079 4.07694 23.0079 4.17926V4.4098C23.0079 5.1118 22.2707 5.23095 21.9509 5.28276C21.6014 5.33811 21.248 5.36626 20.894 5.36695H19.9598C17.4138 5.37731 14.4014 5.3799 14.371 5.3799H10.0295L5.6879 5.38508Z" fill="#37271B"/>
@@ -43,8 +43,8 @@
 					wp_nav_menu(
 						array(
 							'container_id'    => 'primary-menu',
-							'container_class' => 'hidden block bg-white shadow-inner rounded-2xl mt-4 p-4 font-minecraft lg:shadow-none lg:mt-0 lg:p-0 lg:bg-transparent xl:bg-transparent lg:block',
-							'menu_class'      => 'items-center text-secondary lg:flex lg:text-white text-xl lg:-mt-2',
+							'container_class' => 'hidden block bg-white shadow-inner rounded-2xl mt-4 p-4 font-minecraft xl:shadow-none xl:mt-0 xl:p-0 xl:bg-transparent xl:block',
+							'menu_class'      => 'items-center text-secondary xl:flex xl:text-white text-xl xl:-mt-2',
 							'theme_location'  => 'primary',
 							'li_class'        => 'main-menu px-4 whitespace-nowrap',
 							'fallback_cb'     => false,
