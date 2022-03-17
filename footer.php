@@ -21,7 +21,7 @@
 					<a href="https://discord.com/channels/933955962308542495/933955965034856539" target="_blank" class="icon-ds-br w-10 h-10 border-b-0 hover:brightness-125 lg:w-14 lg:h-14"></a>
 				</div>
 				<div class="text-center lg:text-right mb-8">
-					<a href="https://rinkeby.etherscan.io/address/0xcFf1D4DBF5C54546a553866C12094a624a33450a#code" class="border-text lg:text-2xl text-base underline" target="_blank">Verified Smart Contract</a>
+					<a href="https://etherscan.io/address/0x83ED072c0630Cf55a54Cef4E3ae88B78e65af2E6" class="border-text lg:text-2xl text-base underline" target="_blank">Verified Smart Contract</a>
 					<span class="block mt-4 lg:hidden">@2022-All rights reserved to SkinFT</span>
 				</div>
 			</div>
