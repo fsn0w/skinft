@@ -2,8 +2,8 @@
 
 $reveal_time = 'Apr 10, 2022 08:00:00';
 
-$contract = "0xcFf1D4DBF5C54546a553866C12094a624a33450a";
-$network = "https://api-rinkeby.etherscan.io";
+$contract = "0x83ED072c0630Cf55a54Cef4E3ae88B78e65af2E6";
+$network = "https://api.etherscan.io";
 $path = "/var/www/html/wp-content/themes/skinft/assets/json/";
 $api = "PVP6WAPH57Z2TCHRTA5PCTX9H5Q866IC75";
 
