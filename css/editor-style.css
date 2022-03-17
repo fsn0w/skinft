@@ -1064,6 +1064,18 @@ body {
     margin-top: -0.5rem
   }
 
+  .xl\:mt-12 {
+    margin-top: 3rem
+  }
+
+  .xl\:mt-10 {
+    margin-top: 2.5rem
+  }
+
+  .xl\:mt-9 {
+    margin-top: 2.25rem
+  }
+
   .xl\:block {
     display: block
   }

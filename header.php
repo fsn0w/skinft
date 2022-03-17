@@ -17,7 +17,7 @@
 
 	<?php do_action( 'skinft_header' ); ?>
 	<header class="absolute w-full z-50 bg-header xl:h-40">
-		<div class="mx-auto xl:bg-menuline mt-9 lg:mt-16">
+		<div class="mx-auto xl:bg-menuline mt-9 lg:mt-16 xl:mt-9">
 			<div class="mx-auto xl:flex xl:justify-between xl:items-center container">
 				<div class="w-full flex justify-between items-center mt-14 xl:mt-0">
 					<div>
