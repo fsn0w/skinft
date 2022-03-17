@@ -11,7 +11,7 @@ get_header();
 
 <!-- Title Section -->
 
-<div class="w-full pt-32 lg:pt-52 pb-10 bg-title">
+<div class="w-full pt-32 lg:pt-40 xl:pt-52 pb-10 bg-title">
 
     <div class="container mx-auto flex">
         <div class="w-full lg:w-3/5 text-base lg:text-3xl font-thin">

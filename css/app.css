@@ -960,6 +960,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-size: contain;
 }
 
+.bg-grass {
+  background-size: 350px;
+}
+
 .bg-no-repeat {
   background-repeat: no-repeat;
 }
@@ -1367,8 +1371,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .bg-header {
   background-image: url(../assets/img/green-blocks.png);
-  background-size: contain;
+  background-size: 350px;
   background-repeat: repeat-x;
+}
+
+@media (min-width: 1280px) {
+  .bg-header {
+    background-size: contain;
+  }
 }
 
 .bg-title {
@@ -1440,7 +1450,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   opacity: 0.7;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1280px) {
   .main-menu-icon {
     fill: #fff;
   }
@@ -1585,12 +1595,8 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-right: 2.5rem;
   }
 
-  .lg\:mt-0 {
-    margin-top: 0px;
-  }
-
-  .lg\:-mt-2 {
-    margin-top: -0.5rem;
+  .lg\:mt-16 {
+    margin-top: 4rem;
   }
 
   .lg\:mb-16 {
@@ -1601,20 +1607,12 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-top: 1rem;
   }
 
-  .lg\:mt-16 {
-    margin-top: 4rem;
-  }
-
   .lg\:mt-7 {
     margin-top: 1.75rem;
   }
 
   .lg\:mb-0 {
     margin-bottom: 0px;
-  }
-
-  .lg\:mt-20 {
-    margin-top: 5rem;
   }
 
   .lg\:block {
@@ -1639,10 +1637,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:h-14 {
     height: 3.5rem;
-  }
-
-  .lg\:h-40 {
-    height: 10rem;
   }
 
   .lg\:h-12 {
@@ -1709,10 +1703,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     flex-direction: column;
   }
 
-  .lg\:items-center {
-    align-items: center;
-  }
-
   .lg\:justify-end {
     justify-content: flex-end;
   }
@@ -1729,20 +1719,12 @@ Ensure the default browser behavior of the `hidden` attribute.
     gap: 1rem;
   }
 
-  .lg\:bg-menuline {
-    background-color: #13101e80;
-  }
-
-  .lg\:bg-transparent {
-    background-color: transparent;
-  }
-
   .lg\:bg-auto {
     background-size: auto;
   }
 
-  .lg\:p-0 {
-    padding: 0px;
+  .lg\:bg-grass {
+    background-size: 350px;
   }
 
   .lg\:p-6 {
@@ -1777,6 +1759,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:pb-16 {
     padding-bottom: 4rem;
+  }
+
+  .lg\:pt-40 {
+    padding-top: 10rem;
   }
 
   .lg\:text-right {
@@ -1817,30 +1803,15 @@ Ensure the default browser behavior of the `hidden` attribute.
     font-size: 4.5rem;
     line-height: 1;
   }
-
-  .lg\:leading-8 {
-    line-height: 2rem;
-  }
-
-  .lg\:text-white {
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255 / var(--tw-text-opacity));
-  }
-
-  .lg\:shadow-none {
-    --tw-shadow: 0 0 #0000;
-    --tw-shadow-colored: 0 0 #0000;
-    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-  }
 }
 
 @media (min-width: 1280px) {
-  .xl\:-mt-2 {
-    margin-top: -0.5rem;
-  }
-
   .xl\:mt-0 {
     margin-top: 0px;
+  }
+
+  .xl\:-mt-2 {
+    margin-top: -0.5rem;
   }
 
   .xl\:block {
@@ -1867,16 +1838,20 @@ Ensure the default browser behavior of the `hidden` attribute.
     justify-content: space-between;
   }
 
-  .xl\:bg-transparent {
-    background-color: transparent;
-  }
-
   .xl\:bg-menuline {
     background-color: #13101e80;
   }
 
+  .xl\:bg-transparent {
+    background-color: transparent;
+  }
+
   .xl\:p-0 {
     padding: 0px;
+  }
+
+  .xl\:pt-52 {
+    padding-top: 13rem;
   }
 
   .xl\:text-2xl {

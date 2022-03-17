@@ -12,6 +12,12 @@ module.exports = {
         './safelist.txt'
     ],
     theme: {
+        backgroundSize: {
+            'auto': 'auto',
+            'cover': 'cover',
+            'contain': 'contain',
+            'grass': '350px',
+          },
         container: {
             padding: {
                 DEFAULT: '1rem',

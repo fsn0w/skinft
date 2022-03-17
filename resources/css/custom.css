@@ -54,7 +54,7 @@
 
 .bg-header {
     background-image: url(../assets/img/green-blocks.png);
-    @apply bg-repeat-x bg-contain;
+    @apply bg-repeat-x bg-grass xl:bg-contain;
 }
 
 .bg-title {
@@ -106,7 +106,7 @@
     }
 
     .main-menu-icon {
-        @apply inline h-6 w-6 mt-2 hover:opacity-70 fill-secondary lg:fill-white;
+        @apply inline h-6 w-6 mt-2 hover:opacity-70 fill-secondary xl:fill-white;
     }
 
 /* MINT COUNTER */
