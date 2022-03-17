@@ -6,7 +6,7 @@
 
 <?php do_action( 'skinft_content_after' ); ?>
 
-<footer id="colophon" class="site-footer pt-12 pb-16 lg:pb-56 bg-footer text-dark" role="contentinfo">
+<footer id="colophon" class="site-footer pt-12 pb-16 lg:pb-32 xl:pb-56 bg-footer text-dark" role="contentinfo">
 	<?php do_action( 'skinft_footer' ); ?>
 
 	<div class="max-w-3xl mx-auto">

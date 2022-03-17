@@ -64,7 +64,7 @@
 .bg-footer {
     background-color: #532d19;
     background-image: url(../assets/img/green-blocks-footer.png);
-    @apply bg-repeat-x bg-contain lg:bg-auto bg-bottom;
+    @apply bg-repeat-x bg-contain bg-grass xl:bg-auto bg-bottom;
 }
 
 /* MENU */

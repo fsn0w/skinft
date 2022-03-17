@@ -1011,6 +1011,10 @@ body {
     padding-top: 10rem
   }
 
+  .lg\:pb-32 {
+    padding-bottom: 8rem
+  }
+
   .lg\:text-right {
     text-align: right
   }
@@ -1092,12 +1096,20 @@ body {
     background-color: transparent
   }
 
+  .xl\:bg-auto {
+    background-size: auto
+  }
+
   .xl\:p-0 {
     padding: 0px
   }
 
   .xl\:pt-52 {
     padding-top: 13rem
+  }
+
+  .xl\:pb-56 {
+    padding-bottom: 14rem
   }
 
   .xl\:text-2xl {
