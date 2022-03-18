@@ -55,7 +55,7 @@ function true_jquery_register() {
 function tailpress_enqueue_scripts() {
 	$theme = wp_get_theme();
 
-	wp_enqueue_style( 'tailpress', tailpress_asset( 'css/app.css' ), array(),'0.126' );
+	wp_enqueue_style( 'tailpress', tailpress_asset( 'css/app.css' ), array(),'0.127' );
 	wp_enqueue_script( 'tailpress', tailpress_asset( 'js/app.js' ), array(), $theme->get( 'Version' ) );
 }
 

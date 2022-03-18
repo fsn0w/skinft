@@ -18,7 +18,7 @@
 			<div class="w-full lg:w-1/2">
 				<div class="flex justify-center lg:justify-end gap-10 mt-4 mb-2"> 
 					<a href="https://twitter.com/ft_skin" target="_blank" class="icon-tw-br w-10 h-10 border-b-0 hover:brightness-125 lg:w-14 lg:h-14"></a>
-					<a href="https://discord.com/channels/933955962308542495/933955965034856539" target="_blank" class="icon-ds-br w-10 h-10 border-b-0 hover:brightness-125 lg:w-14 lg:h-14"></a>
+					<a href="https://discord.gg/VMqGP5wtKy" target="_blank" class="icon-ds-br w-10 h-10 border-b-0 hover:brightness-125 lg:w-14 lg:h-14"></a>
 				</div>
 				<div class="text-center lg:text-right mb-8">
 					<a href="https://etherscan.io/address/0x83ED072c0630Cf55a54Cef4E3ae88B78e65af2E6" class="border-text lg:text-2xl text-base underline" target="_blank">Verified Smart Contract</a>
