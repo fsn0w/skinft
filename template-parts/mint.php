@@ -20,7 +20,13 @@ $mint = ((isset($_GET['timeroff']) || $cdate>$sdate)?true:false);
 
 <div class="w-full pt-32 lg:pt-52 pb-32 bg-title text-center">
 
-            <div class="inline-block mx-auto text-center bg-[#f7f0e834] py-6 px-4 lg:p-6 rounded relative lg:min-w-[630px]">
+<!-- TEMP -->
+            <div class="inline-block mx-auto">
+                <h2><span>S</span>kin<span>FT</span>s are coming <span>!</span> <br/> <span>M</span>int day will be soon announced </h2>
+            </div>
+<!-- /TEMP -->
+
+            <div class="hidden inline-block mx-auto text-center bg-[#f7f0e834] py-6 px-4 lg:p-6 rounded relative lg:min-w-[630px]">
 <?php 
     if ($mint) { 
 ?>
