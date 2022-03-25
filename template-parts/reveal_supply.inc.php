@@ -1,6 +1,6 @@
 <?php
 
-$reveal_time = 'Apr 10, 2022 08:00:00';
+$reveal_time = 'Apr 10, 2023 08:00:00';
 
 $contract = "0x83ED072c0630Cf55a54Cef4E3ae88B78e65af2E6";
 $network = "https://api.etherscan.io";

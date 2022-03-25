@@ -6,7 +6,7 @@
 
 get_header();
 
-$start = 'Apr 8, 2022 08:00:00';
+$start = 'Apr 8, 2023 08:00:00';
 
 $cdate = strtotime(current_time("M j, Y H:i:s"));
 $sdate = strtotime($start);
