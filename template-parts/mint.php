@@ -23,7 +23,7 @@ $mint = ((isset($_GET['timeroff']) || $cdate>$sdate)?true:false);
 <!-- TEMP -->
             <div class="inline-block mx-auto py-12 lg:py-24">
                 <h2><span>S</span>kin<span>FT</span>s are coming <span>!</span> <br/> <span>M</span>int day will be soon announced </h2>
-                <img src="<?=get_stylesheet_directory_uri()?>/assets/img/mint-3d-model-front.png" class="absolute h-32 w-auto left-4 -bottom-24 lg:hidden" />
+                <img src="<?=get_stylesheet_directory_uri()?>/assets/img/mint-3d-model-front.png" class="absolute h-32 w-auto left-4 -bottom-4 lg:hidden" />
             </div>
 <!-- /TEMP -->
 
