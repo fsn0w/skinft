@@ -500,6 +500,11 @@
   padding-bottom: 1.5rem
 }
 
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem
+}
+
 .pt-12 {
   padding-top: 3rem
 }
@@ -981,6 +986,11 @@ body {
   .lg\:px-3 {
     padding-left: 0.75rem;
     padding-right: 0.75rem
+  }
+
+  .lg\:py-24 {
+    padding-top: 6rem;
+    padding-bottom: 6rem
   }
 
   .lg\:pb-32 {
